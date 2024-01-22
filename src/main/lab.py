@@ -87,14 +87,13 @@ def retrieveSimilarWordsExercise(max_limit: int):
 
 # TODO: Complete the following function to return the word that is the least similar in the given list. 
 def w2vDoesntMatchExercise(words: list[str]):
-    
-    return # return the least similar word in the words list 
+    return w2v.doesnt_match(words)
 
-
-if __name__ == '__main__':
+#if __name__ == '__main__':
     #sampleW2V();
     #retrieveVector('word');
     #sampleSimilarity();
     #similarPairExercise();
     #retrieveSimilarWordsExercise(5)
     #print(retrieveVector("table"))
+    #print(w2vDoesntMatchExercise(["monkey", "chimp", "gorilla", "dog"]))
