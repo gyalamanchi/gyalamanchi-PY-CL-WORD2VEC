@@ -39,6 +39,10 @@ def sampleW2V():
 
 # TODO: complete the following function to retrieve vector representation of an input word. You should also make sure if it doesn't know the word, it returns -1, it will not crash.(aka, catch the KeyError)
 def retrieveVector(input_word):
+    try:
+        print(w2v[input_word])
+    except KeyError as e:
+        print(e)
     return -1
 """
 We can also do similarity comparisions using the Word2Vec model.
@@ -78,3 +82,8 @@ def retrieveSimilarWordsExercise(max_limit: int):
 def w2vDoesntMatchExercise(words: list[str]):
     
     return # return the least similar word in the words list 
+
+
+if __name__ == '__main__':
+    #sampleW2V();
+    retrieveVector('word');
